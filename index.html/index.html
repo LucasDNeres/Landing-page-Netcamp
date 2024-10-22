@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="menu.js" defer></script>
+    <title>Net Camp</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo da Netcamp">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Início</a></li> 
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="https://www.facebook.com/"></a>
+                <button onclick="window.location.href='https://api.whatsapp.com/send/?phone=554131503876&text&type=phone_number&app_absent=0'">Contato</button>
+            </div><!--contato-->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Localização</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section id="inicio"></section>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Bem-vindo à <span>NET</span><span1>CAMP</span1>.</h1>
+                        <p>Entendemos que seus dispositivos são essenciais para o seu dia a dia. Seja seu celular, computador ou notebook, estamos prontos para resolver qualquer problema com rapidez, qualidade e transparência.</p>
+
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button onclick="window.location.href='https://api.whatsapp.com/send/?phone=554131503876&text&type=phone_number&app_absent=0'"><i class="bi bi-whatsapp"></i> Solicite um Orçamento</button> 
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/pessoa.png" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+        
+        <section id="servicos"></section>
+        <section class="especiliadades">
+            <div class="interface">
+                <h2 class="titulo">PRINCIPAIS <span>SERVIÇOS.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box" data-aos="flip-left" data-aos-delay="300">
+                        <i class="bi bi-phone"></i>
+                        <h3>Manutenção de Celular</h3>
+                        <p>Realizamos Substituição de telas, conectores, troca de baterias e reparos em componentes internos, tudo com garantia e qualidade.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box" data-aos="flip-left" data-aos-delay="300">
+                        <i class="bi bi-laptop"></i>
+                        <h3>Manutenção de Notebook</h3>
+                        <p>Realizamos manutenção especializada em notebooks para garantir o melhor desempenho e durabilidade.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box" data-aos="flip-left" data-aos-delay="300">
+                        <i class="bi bi-basket"></i>
+                        <h3>Venda de Acessorios</h3>
+                        <p>Aqui você encontra uma grande variedade de acessórios de informática e celulares de alta qualidade.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especiliadades-->
+
+        <section id="Sobre"></section>
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre" data-aos="fade">
+                        <img src="images/foto.png" alt="">
+                    </div><!--img-sobre-->
+                    <section id="Sobre"></section>
+                    <div class="txt-sobre">
+                        <h2>UM POUCO SOBRE <span>NOSSA HISTORIA.</span></h2>
+                        <p>     Fundada há 10 anos, a Netcamp nasceu do desejo de oferecer soluções acessíveis e de qualidade para o público.<br> 
+                                A jornada da Netcamp começou como uma simples Lan House. Com o passar dos anos, percebemos uma demanda crescente por serviços de manutenção de celulares e a necessidade de suporte técnico especializado. Adaptamos nossos serviços para atender a essas necessidades, sempre com foco na qualidade.<br> 
+                                Com o tempo, nossa equipe se aprimorou. Investimos em treinamentos constantes e na atualização de equipamentos e técnicas, garantindo que nossos clientes recebam o melhor.<br> 
+                                Hoje, a Netcamp é reconhecida na comunidade como uma referência em assistência técnica, oferecendo serviços como reparo de computadores, manutenção de notebooks e celulares.<br> 
+                            Agradecemos a todos os nossos clientes que fizeram parte da nossa história e que continuam a confiar na Netcamp para suas necessidades.<br> 
+                        </p>
+                        
+                        <div class="btn-social" data-aos="fade">
+                            <a href="#"><button onclick="window.location.href='https://www.instagram.com/netcamp_informatica/'"><i class="bi bi-instagram"></i></button> </a>
+                            <a href="#"><button onclick="window.location.href='https://www.facebook.com/netcampinformatica'"><i class="bi bi-facebook"></i></button></a>
+                            <a href="#"><button onclick="window.location.href='https://api.whatsapp.com/send/?phone=554131503876&text&type=phone_number&app_absent=0'"><i class="bi bi-whatsapp"></i></button></a>
+                
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section class="ambiente">
+            <div class="interface" >
+                <h2 class="titulo">NOSSO <span>AMBIENTE.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem2.jpg);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/imagem3.jpg);">
+                        <div class="overlay"></div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+        
+        <section id="localizacao"></section>
+
+        <section class="localizacao">
+        <h2 class="titulo">VENHA NOS <span>CONHECER.</span></h2>
+        <div class="maps">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.1116922888964!2d-49.56928952382615!3d-25.467945634395686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd17df1c8d3a27%3A0xe051d4f406af5b4d!2sNet%20Camp%20Assist%C3%AAncia%20T%C3%A9cnica!5e0!3m2!1spt-BR!2sbr!4v1728611514293!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        <form>
+            <h2>ONDE NOS ENCONTRAR</h2>
+            <p>Tenha o atendimento de excelência que você precisa.</p>
+            <p><span>Telefone:</span> <BR>(41) 3150-3876 </p>
+            <p><span>Horario de Atendimento:</span> <br>Segunda - Sexta <br>09:00h - 12:00h | 13:30h a 18:00h</p>   
+        </form>
+        </div> <!--Div Maps-->   
+        </section>    
+        
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/Design sem nome.png" alt="Logotipo Agência BRN">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="#"><button onclick="window.location.href='https://www.instagram.com/netcamp_informatica/'"><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button onclick="window.location.href='https://www.facebook.com/netcampinformatica'"><i class="bi bi-facebook"></i></button></a>
+                        <a href="#"><button onclick="window.location.href='https://api.whatsapp.com/send/?phone=554131503876&text&type=phone_number&app_absent=0'"><i class="bi bi-whatsapp"></i></button></a>
+
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="campnet@outlook.com">campnet@outlook.com</a></p>
+            </div><!--line-footer-->
+
+            <div class="direitos">
+                <P>Netcamp - Qualidade e Transparência a Seu Alcance. © 2024 Todos os direitos reservados. By Lucas Neres</P>
+            </div>
+
+        </div><!--interface-->
+    </footer>
+    <a
+    href="'https://api.whatsapp.com/send/?phone=554131503876&text&type=phone_number&app_absent=0'"
+    class="btn-whatsapp"
+    target="_blank"
+    >
+    <img src="images/whatsapp.png" alt="Botao WhatsApp"/>
+    <span class="tooltip-text">Entre em contato</span>
+</a>
+
+<script src="menu.js"></script>
+
+</body>
+
+</html>
